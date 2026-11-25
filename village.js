@@ -96,7 +96,7 @@ function render(grid) {
   // The land is drawn three times: a shallow-water outline, the cliff (shifted down), then the grass on top.
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
 <defs><path id="land" d="${land}"/>${SPRITES}</defs>
-<rect width="${width}" height="${height}" rx="12" fill="#7cc6de"/>
+<rect width="${width}" height="${height}" rx="12" fill="#4cb6ceaa"/>
 <path d="${waves}" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.2" stroke-linecap="round"/>
 <g fill="#bfe8f2" stroke="#bfe8f2" stroke-width="6" stroke-linejoin="round"><use href="#land"/><use href="#land" y="5"/></g>
 <use href="#land" y="5" fill="#a8774f"/>
